@@ -1,12 +1,9 @@
-let name = "Lord"
-console.log(`Hello ${1}`)
-console.log(`Hello ${"name"}`)
-console.log(`Hello ${name}`)
-let age = 17
-if(age == 17){
-    //какое то действие
-} else if( name == "Lord"){
-    //какое то действие
-} else{
-    //какое то действие
-}
+function palindrome(str) {
+    return (str == str.split('').reverse().join('')) 
+  }
+  
+  console.log(palindrome('34543'));// === true
+  console.log(palindrome('345543'));// === true
+  console.log(palindrome('3'));// === true
+  console.log(palindrome(''));// === true
+  console.log(palindrome('723210'));// === false
